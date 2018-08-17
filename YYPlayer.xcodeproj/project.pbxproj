@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1776207A2123CBEF00BCBECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177620792123CBEF00BCBECB /* AppDelegate.swift */; };
-		1776207C2123CBEF00BCBECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776207B2123CBEF00BCBECB /* ViewController.swift */; };
 		1776207F2123CBEF00BCBECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1776207D2123CBEF00BCBECB /* Main.storyboard */; };
 		177620812123CBF000BCBECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177620802123CBF000BCBECB /* Assets.xcassets */; };
 		177620842123CBF000BCBECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177620822123CBF000BCBECB /* LaunchScreen.storyboard */; };
+		177620902123ED9E00BCBECB /* VideoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776208F2123ED9E00BCBECB /* VideoListTableViewController.swift */; };
+		177620922123EEB300BCBECB /* VideoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177620912123EEB300BCBECB /* VideoItemCell.swift */; };
+		177620942124016B00BCBECB /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177620932124016B00BCBECB /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		177620762123CBEF00BCBECB /* YYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177620792123CBEF00BCBECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1776207B2123CBEF00BCBECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1776207E2123CBEF00BCBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		177620802123CBF000BCBECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177620832123CBF000BCBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177620852123CBF000BCBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1776208F2123ED9E00BCBECB /* VideoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewController.swift; sourceTree = "<group>"; };
+		177620912123EEB300BCBECB /* VideoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemCell.swift; sourceTree = "<group>"; };
+		177620932124016B00BCBECB /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				177620792123CBEF00BCBECB /* AppDelegate.swift */,
-				1776207B2123CBEF00BCBECB /* ViewController.swift */,
 				1776207D2123CBEF00BCBECB /* Main.storyboard */,
 				177620802123CBF000BCBECB /* Assets.xcassets */,
 				177620822123CBF000BCBECB /* LaunchScreen.storyboard */,
 				177620852123CBF000BCBECB /* Info.plist */,
+				1776208F2123ED9E00BCBECB /* VideoListTableViewController.swift */,
+				177620912123EEB300BCBECB /* VideoItemCell.swift */,
+				177620932124016B00BCBECB /* VideoPlayer.swift */,
 			);
 			path = YYPlayer;
 			sourceTree = "<group>";
@@ -96,6 +102,12 @@
 				TargetAttributes = {
 					177620752123CBEF00BCBECB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1776207C2123CBEF00BCBECB /* ViewController.swift in Sources */,
+				177620922123EEB300BCBECB /* VideoItemCell.swift in Sources */,
+				177620942124016B00BCBECB /* VideoPlayer.swift in Sources */,
 				1776207A2123CBEF00BCBECB /* AppDelegate.swift in Sources */,
+				177620902123ED9E00BCBECB /* VideoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -283,13 +297,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4S5JB5G4;
 				INFOPLIST_FILE = YYPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,13 +316,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4S5JB5G4;
 				INFOPLIST_FILE = YYPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
