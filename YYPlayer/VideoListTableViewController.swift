@@ -57,7 +57,6 @@ class VideoListTableViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
     }
     // MARK: - Table view data source
     
