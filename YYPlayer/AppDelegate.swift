@@ -9,6 +9,7 @@
 import AVKit
 import MediaPlayer
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -56,11 +57,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(error)
         }
 
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleInterruption(notification:)), name: AVAudioSession.interruptionNotification, object: nil)
+        
+
         application.beginReceivingRemoteControlEvents()
 
         return true
     }
 
+    @objc func handleInterruption(notification: Notification) {
+        guard let userInfo = notification.userInfo,
+            let typeInt = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
+        let type = AVAudioSession.InterruptionType(rawValue: typeInt) else {
+            return
+        }
+        
+        switch type {
+        case .began:
+            // Pause your player
+            print("pause")
+            
+        case .ended:
+            if let optionInt = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt {
+                let options = AVAudioSession.InterruptionOptions(rawValue: optionInt)
+                if options.contains(.shouldResume) {
+                    // Resume your player
+                    VideoPlayer.shared.player.play()
+                }
+            }
+        }
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
     }
 
