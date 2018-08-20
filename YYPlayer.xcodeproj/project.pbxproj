@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173D8BF2212A8BD5003B0E4F /* YYPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173D8BF1212A8BD5003B0E4F /* YYPlayerUITests.swift */; };
+		173D8BFA212A8C47003B0E4F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173D8BF9212A8C47003B0E4F /* SnapshotHelper.swift */; };
+		173D8BFE212A9250003B0E4F /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 173D8BFB212A9250003B0E4F /* Snapfile */; };
+		173D8BFF212A9250003B0E4F /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 173D8BFC212A9250003B0E4F /* Appfile */; };
+		173D8C00212A9250003B0E4F /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 173D8BFD212A9250003B0E4F /* Fastfile */; };
 		1776207A2123CBEF00BCBECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177620792123CBEF00BCBECB /* AppDelegate.swift */; };
 		1776207F2123CBEF00BCBECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1776207D2123CBEF00BCBECB /* Main.storyboard */; };
 		177620812123CBF000BCBECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177620802123CBF000BCBECB /* Assets.xcassets */; };
@@ -16,7 +21,24 @@
 		177620942124016B00BCBECB /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177620932124016B00BCBECB /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		173D8BF4212A8BD5003B0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1776206E2123CBEF00BCBECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177620752123CBEF00BCBECB;
+			remoteInfo = YYPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		173D8BEF212A8BD5003B0E4F /* YYPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		173D8BF1212A8BD5003B0E4F /* YYPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYPlayerUITests.swift; sourceTree = "<group>"; };
+		173D8BF3212A8BD5003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		173D8BF9212A8C47003B0E4F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		173D8BFB212A9250003B0E4F /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Snapfile; path = fastlane/Snapfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.applescript; };
+		173D8BFC212A9250003B0E4F /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Appfile; path = fastlane/Appfile; sourceTree = SOURCE_ROOT; };
+		173D8BFD212A9250003B0E4F /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
 		177620762123CBEF00BCBECB /* YYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177620792123CBEF00BCBECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1776207E2123CBEF00BCBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		173D8BEC212A8BD5003B0E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		177620732123CBEF00BCBECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		173D8BF0212A8BD5003B0E4F /* YYPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				173D8BF9212A8C47003B0E4F /* SnapshotHelper.swift */,
+				173D8BF1212A8BD5003B0E4F /* YYPlayerUITests.swift */,
+				173D8BF3212A8BD5003B0E4F /* Info.plist */,
+			);
+			path = YYPlayerUITests;
+			sourceTree = "<group>";
+		};
 		1776206D2123CBEF00BCBECB = {
 			isa = PBXGroup;
 			children = (
 				177620782123CBEF00BCBECB /* YYPlayer */,
+				173D8BF0212A8BD5003B0E4F /* YYPlayerUITests */,
 				177620772123CBEF00BCBECB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				177620762123CBEF00BCBECB /* YYPlayer.app */,
+				173D8BEF212A8BD5003B0E4F /* YYPlayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +99,9 @@
 		177620782123CBEF00BCBECB /* YYPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				173D8BFC212A9250003B0E4F /* Appfile */,
+				173D8BFD212A9250003B0E4F /* Fastfile */,
+				173D8BFB212A9250003B0E4F /* Snapfile */,
 				177620792123CBEF00BCBECB /* AppDelegate.swift */,
 				1776207D2123CBEF00BCBECB /* Main.storyboard */,
 				177620802123CBF000BCBECB /* Assets.xcassets */,
@@ -73,6 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		173D8BEE212A8BD5003B0E4F /* YYPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 173D8BF8212A8BD5003B0E4F /* Build configuration list for PBXNativeTarget "YYPlayerUITests" */;
+			buildPhases = (
+				173D8BEB212A8BD5003B0E4F /* Sources */,
+				173D8BEC212A8BD5003B0E4F /* Frameworks */,
+				173D8BED212A8BD5003B0E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				173D8BF5212A8BD5003B0E4F /* PBXTargetDependency */,
+			);
+			name = YYPlayerUITests;
+			productName = YYPlayerUITests;
+			productReference = 173D8BEF212A8BD5003B0E4F /* YYPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		177620752123CBEF00BCBECB /* YYPlayer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 177620882123CBF000BCBECB /* Build configuration list for PBXNativeTarget "YYPlayer" */;
@@ -96,10 +158,15 @@
 		1776206E2123CBEF00BCBECB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "EF Education";
 				TargetAttributes = {
+					173D8BEE212A8BD5003B0E4F = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 177620752123CBEF00BCBECB;
+					};
 					177620752123CBEF00BCBECB = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
@@ -125,17 +192,28 @@
 			projectRoot = "";
 			targets = (
 				177620752123CBEF00BCBECB /* YYPlayer */,
+				173D8BEE212A8BD5003B0E4F /* YYPlayerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		173D8BED212A8BD5003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		177620742123CBEF00BCBECB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173D8C00212A9250003B0E4F /* Fastfile in Resources */,
 				177620842123CBF000BCBECB /* LaunchScreen.storyboard in Resources */,
+				173D8BFF212A9250003B0E4F /* Appfile in Resources */,
 				177620812123CBF000BCBECB /* Assets.xcassets in Resources */,
+				173D8BFE212A9250003B0E4F /* Snapfile in Resources */,
 				1776207F2123CBEF00BCBECB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +221,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		173D8BEB212A8BD5003B0E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173D8BF2212A8BD5003B0E4F /* YYPlayerUITests.swift in Sources */,
+				173D8BFA212A8C47003B0E4F /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		177620722123CBEF00BCBECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +242,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		173D8BF5212A8BD5003B0E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177620752123CBEF00BCBECB /* YYPlayer */;
+			targetProxy = 173D8BF4212A8BD5003B0E4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1776207D2123CBEF00BCBECB /* Main.storyboard */ = {
@@ -176,6 +271,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		173D8BF6212A8BD5003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4S5JB5G4;
+				INFOPLIST_FILE = YYPlayerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YYPlayer;
+			};
+			name = Debug;
+		};
+		173D8BF7212A8BD5003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4S5JB5G4;
+				INFOPLIST_FILE = YYPlayerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YYPlayer;
+			};
+			name = Release;
+		};
 		177620862123CBF000BCBECB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +469,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		173D8BF8212A8BD5003B0E4F /* Build configuration list for PBXNativeTarget "YYPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173D8BF6212A8BD5003B0E4F /* Debug */,
+				173D8BF7212A8BD5003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		177620712123CBEF00BCBECB /* Build configuration list for PBXProject "YYPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
