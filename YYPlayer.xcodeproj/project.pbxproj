@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171CAF2B212E4CBD0099E77C /* YYPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171CAF2A212E4CBD0099E77C /* YYPlayerTests.swift */; };
 		173D8BF2212A8BD5003B0E4F /* YYPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173D8BF1212A8BD5003B0E4F /* YYPlayerUITests.swift */; };
 		173D8BFA212A8C47003B0E4F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173D8BF9212A8C47003B0E4F /* SnapshotHelper.swift */; };
 		173D8BFE212A9250003B0E4F /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 173D8BFB212A9250003B0E4F /* Snapfile */; };
@@ -22,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		171CAF2D212E4CBD0099E77C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1776206E2123CBEF00BCBECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177620752123CBEF00BCBECB;
+			remoteInfo = YYPlayer;
+		};
 		173D8BF4212A8BD5003B0E4F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1776206E2123CBEF00BCBECB /* Project object */;
@@ -32,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171CAF28212E4CBD0099E77C /* YYPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		171CAF2A212E4CBD0099E77C /* YYPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYPlayerTests.swift; sourceTree = "<group>"; };
+		171CAF2C212E4CBD0099E77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173D8BEF212A8BD5003B0E4F /* YYPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173D8BF1212A8BD5003B0E4F /* YYPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYPlayerUITests.swift; sourceTree = "<group>"; };
 		173D8BF3212A8BD5003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		171CAF25212E4CBD0099E77C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		173D8BEC212A8BD5003B0E4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171CAF29212E4CBD0099E77C /* YYPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				171CAF2A212E4CBD0099E77C /* YYPlayerTests.swift */,
+				171CAF2C212E4CBD0099E77C /* Info.plist */,
+			);
+			path = YYPlayerTests;
+			sourceTree = "<group>";
+		};
 		173D8BF0212A8BD5003B0E4F /* YYPlayerUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,7 @@
 			children = (
 				177620782123CBEF00BCBECB /* YYPlayer */,
 				173D8BF0212A8BD5003B0E4F /* YYPlayerUITests */,
+				171CAF29212E4CBD0099E77C /* YYPlayerTests */,
 				177620772123CBEF00BCBECB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +120,7 @@
 			children = (
 				177620762123CBEF00BCBECB /* YYPlayer.app */,
 				173D8BEF212A8BD5003B0E4F /* YYPlayerUITests.xctest */,
+				171CAF28212E4CBD0099E77C /* YYPlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +146,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		171CAF27212E4CBD0099E77C /* YYPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171CAF31212E4CBD0099E77C /* Build configuration list for PBXNativeTarget "YYPlayerTests" */;
+			buildPhases = (
+				171CAF24212E4CBD0099E77C /* Sources */,
+				171CAF25212E4CBD0099E77C /* Frameworks */,
+				171CAF26212E4CBD0099E77C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171CAF2E212E4CBD0099E77C /* PBXTargetDependency */,
+			);
+			name = YYPlayerTests;
+			productName = YYPlayerTests;
+			productReference = 171CAF28212E4CBD0099E77C /* YYPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		173D8BEE212A8BD5003B0E4F /* YYPlayerUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 173D8BF8212A8BD5003B0E4F /* Build configuration list for PBXNativeTarget "YYPlayerUITests" */;
@@ -162,6 +209,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "EF Education";
 				TargetAttributes = {
+					171CAF27212E4CBD0099E77C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 177620752123CBEF00BCBECB;
+					};
 					173D8BEE212A8BD5003B0E4F = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -193,11 +244,19 @@
 			targets = (
 				177620752123CBEF00BCBECB /* YYPlayer */,
 				173D8BEE212A8BD5003B0E4F /* YYPlayerUITests */,
+				171CAF27212E4CBD0099E77C /* YYPlayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		171CAF26212E4CBD0099E77C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		173D8BED212A8BD5003B0E4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +280,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		171CAF24212E4CBD0099E77C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171CAF2B212E4CBD0099E77C /* YYPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		173D8BEB212A8BD5003B0E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +311,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		171CAF2E212E4CBD0099E77C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177620752123CBEF00BCBECB /* YYPlayer */;
+			targetProxy = 171CAF2D212E4CBD0099E77C /* PBXContainerItemProxy */;
+		};
 		173D8BF5212A8BD5003B0E4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 177620752123CBEF00BCBECB /* YYPlayer */;
@@ -271,6 +343,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		171CAF2F212E4CBD0099E77C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4S5JB5G4;
+				INFOPLIST_FILE = YYPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYPlayer.app/YYPlayer";
+			};
+			name = Debug;
+		};
+		171CAF30212E4CBD0099E77C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4S5JB5G4;
+				INFOPLIST_FILE = YYPlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ef.YYPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYPlayer.app/YYPlayer";
+			};
+			name = Release;
+		};
 		173D8BF6212A8BD5003B0E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		171CAF31212E4CBD0099E77C /* Build configuration list for PBXNativeTarget "YYPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171CAF2F212E4CBD0099E77C /* Debug */,
+				171CAF30212E4CBD0099E77C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		173D8BF8212A8BD5003B0E4F /* Build configuration list for PBXNativeTarget "YYPlayerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

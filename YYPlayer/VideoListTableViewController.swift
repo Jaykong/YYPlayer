@@ -46,8 +46,6 @@ class VideoListTableViewController: UITableViewController {
         videoList = contents
         
         NotificationCenter.default.addObserver(self, selector: #selector(VideoListTableViewController.finishVideo), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
-
-//        tableView.estimatedRowHeight = 60
     }
     
     override func didReceiveMemoryWarning() {
@@ -131,7 +129,6 @@ extension VideoListTableViewController {
         })
         
         nowPlayingInfo[MPMediaItemPropertyTitle] = title
-//        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = album
         nowPlayingInfo[MPMediaItemPropertyArtwork] = artwork
         
         nowPlayingInfoCenter.nowPlayingInfo = nowPlayingInfo

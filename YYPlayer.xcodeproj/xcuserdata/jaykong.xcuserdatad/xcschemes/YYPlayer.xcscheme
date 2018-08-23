@@ -38,6 +38,16 @@
                ReferencedContainer = "container:YYPlayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "171CAF27212E4CBD0099E77C"
+               BuildableName = "YYPlayerTests.xctest"
+               BlueprintName = "YYPlayerTests"
+               ReferencedContainer = "container:YYPlayer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
